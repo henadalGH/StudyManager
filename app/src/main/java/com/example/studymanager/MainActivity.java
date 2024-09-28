@@ -1,7 +1,9 @@
 package com.example.studymanager;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.studymanager.ui.login.LoginActivity;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -63,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        } else if (id == R.id.InLogin) {
+            Intent loginAct = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(loginAct);
         }
 
         return super.onOptionsItemSelected(item);
