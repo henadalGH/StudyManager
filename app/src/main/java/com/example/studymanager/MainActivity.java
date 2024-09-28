@@ -68,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
         } else if (id == R.id.InLogin) {
             Intent loginAct = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(loginAct);
+        }else
+        {
+            Intent regAct = new Intent(MainActivity.this, RegistroActivity.class);
+            startActivity(regAct);
         }
 
         return super.onOptionsItemSelected(item);
